@@ -151,6 +151,7 @@ public class MetaballMeshBuilder : MonoBehaviour
 		mesh.Clear();
 		mesh.vertices = vertices.ToArray();
 		mesh.triangles = triangles.ToArray();
+		mesh.RecalculateNormals(); 
 	}
 
 	private float getValueAtPoint(Vector3 point)
